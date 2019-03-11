@@ -6,25 +6,43 @@
         <meta name="Giyeon Shin" content = "FastToilet">
         <meta name = "viewport" content="width=1280">
         <link rel="stylesheet" href="./style.css">
+
+        <script>
+            function NightDayHandler(self){
+                var target = document.querySelector('#body');
+                var background_nav_menu = document.querySelectorAll('#nav_menu ul li');
+                var target_a = document.querySelectorAll('#nav_menu ul li a');
+                //var target_a_hover = document.querySelectorAll('#nav_menu ul li a:hover');
+                var color_a;
+                var color_b;
+                if(self.value === 'night'){
+                    color_a = 'black';
+                    color_b = 'white';
+                }
+                else{
+                    color_a = 'white';
+                    color_b = 'black';
+                }
+
+                target.style.backgroundColor = color_a;
+                target.style.color = color_b;
+                var i = 0;
+                for(; i<target_a.length; i++){
+                    target_a[i].style.color = color_a;
+                    // target_a_hover[i].style.backgroundColor=color_b;
+                    // target_a_hover[i].style.color=color_a;
+                    background_nav_menu[i].style.backgroundColor = color_b;
+                }
+                self.value = self.value==='day' ? 'night' : 'day';
+            }
+        </script>
     </head>
     <body>
         <header>
             <div id="title_menu">
                     <p class="title"><a href="./FastToilet.html">Fast Toilet</a></p>
                     <p class="subtitle"><span style="font: italic bold 1em/2em, serif; color:red; font-size:15px;">쉽게 화장실을 찾습니다.</span></p>
-                    <input id="night_day" type="button" value="night" onclick="
-                        var target = document.querySelector('#body');
-                        if(this.value === 'night'){
-                            target.style.backgroundColor = 'black';
-                            target.style.color = 'white';
-                            this.value = 'day';
-                        }
-                        else {
-                            target.style.backgroundColor = 'white';
-                            target.style.color = 'black';
-                            this.value = 'night';
-                        }
-                    ">
+                    <input id="night_day" type="button" value='night' onclick="NightDayHandler(this);">
             </div>
             <div id="nav_menu">
                     <ul>
