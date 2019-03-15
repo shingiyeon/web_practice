@@ -1,0 +1,23 @@
+a {
+    text-decoration:none;
+    color: black;
+}
+section > a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+header{
+    display:block;
+    height:50px;
+    font-size:30px;
+    text-align:center;
+    font-weight:bold;
+}
+section{
+    text-align:center;
+}
+section > nav{
+    display: inline-block;
+    text-align:center;
+    width:30px;
+    font-weight: bold;
+}
