@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            a {
+                background-color:red;
+            }
+
+            /* section, div => section, div 둘다 */
+            section, div {
+                margin:50px;
+                background-color:gray;
+            }
+
+            section > a {
+                display:inline-block;
+            }
+
+            a {
+                width:100px;
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        display:inline-block인 경우
+        <section>
+            <a href="#">안녕</a>
+            <a href="#">잘가</a>
+        </section>
+
+        display:inline인 경우
+        <div>
+            <a href="#">안녕</a>
+            <a href="#">잘가</a>
+        </div>
+    </body>
+
+</html>

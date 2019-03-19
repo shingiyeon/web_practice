@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./jquery.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript">
+            var func1 = function(){
+                $('div:first-child').css('background-color', 'red');
+            }
+
+            var func2 = function(){
+                $('div:nth-child(2)').css('background-color', 'green');
+            }
+
+            var func3 = function(){
+                $('div:last-child').css('background-color', 'green');
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>111</div>
+        <div>222</div>
+        <div>333</div>
+        <script type="text/javascript">
+            $('div:first-child').click(func1);
+            $('div:nth-child(2)').click(func2);
+            $('div:last-child').click(func3);
+        </script>
+    </body>
+</html>
