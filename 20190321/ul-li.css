@@ -1,0 +1,36 @@
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu_item {
+    text-align: center;
+}
+
+.menu_item > ul {
+    display: inline-block;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.menu_item > ul > li {
+    display: inline-block;
+}
+
+.menu_item > ul > li > a{
+    display: block;
+    padding: 10px 0px;
+}
+
+.menu_item > ul > li > a:hover{
+    color: white;
+    background-color: black;
+    
+}

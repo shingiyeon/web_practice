@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section > div{
+                position: absolute;
+                width: 33.3%;
+                height: 33.3%;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+    </body>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+        for(var i=0; i<9; i++){
+            var h = parseInt(i/3);
+            var w = i%3;
+            var c = 55 + i * 10;
+            $('section > div').eq(i).css('top', h*33.3+'%');
+            $('section > div').eq(i).css('left', w*33.3+'%');
+            $('section > div').eq(i).css('background-color', 'rgba('+c+',0,0,1)');
+        }
+    </script>
+</html>

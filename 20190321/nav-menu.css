@@ -1,0 +1,30 @@
+a {
+    color : inherit;
+    text-decoration: none;
+}
+
+.menu-box {
+    margin : 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-box > div{
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 5px;
+    background: gray;
+}
+
+.menu-box > div > div {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.menu-box > div > div:hover{
+   background-color: black;
+   color: white;  
+}

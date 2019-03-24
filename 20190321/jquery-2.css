@@ -1,0 +1,81 @@
+.popup-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0);
+    visibility: hidden;
+    transition: background-color 1s, visibility 1s;
+}
+
+.button-block{
+    display:block;
+    text-align:center;
+}
+
+.button-block > .button{
+    display:inline-block;
+    margin-bottom:10px;
+    background-color: black;
+    color: white;
+}
+
+.button-block > .button:hover{
+    cursor: pointer;
+}
+
+.popup-bg.active{
+    background-color: rgba(0,0,0,0.5);
+    visibility: visible;
+}
+
+.popup-bg.active + .popup{
+    opacity: 1;
+    transform:translateX(-50%) translateY(-50%);
+    visibility: visible;
+}
+
+.popup{
+    position:fixed;
+    width:500px;
+    height:500px;
+    top:50%;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100%);
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+    background-color:white;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.popup > .btn-close {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+
+.popup > .btn-close:hover {
+    transform:rotate(-4deg);
+}
+
+.popup > .btn-close::before, .popup > .btn-close::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    top:50%;
+    left:50%;
+    width:30%;
+    height:100%;
+    transform:translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.popup > .btn-close::after {
+    transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+}

@@ -1,0 +1,46 @@
+.popup-bg{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.popup{
+    position:fixed;
+    width:500px;
+    height:500px;
+    top:50%;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    background-color:red;
+}
+
+.popup > .btn-close {
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    right:0;
+    cursor:pointer;
+}
+
+.popup > .btn-close:hover {
+    transform:rotate(-4deg);
+}
+
+.popup > .btn-close::before, .popup > .btn-close::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    top:50%;
+    left:50%;
+    width:30%;
+    height:100%;
+    transform:translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.popup > .btn-close::after {
+    transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+}
