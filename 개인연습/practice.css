@@ -29,6 +29,7 @@ ul, li{
     display: inline-block;
     padding: 0px 10px;
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .top_menu > ul > li{
@@ -47,8 +48,8 @@ ul, li{
 
 .top_menu > ul ul {
     font-size: 0.8rem;
-    position: absolute;
-    display: block;
+    position: relative;
+    display: none;
     visibility: hidden;
     color: black;
     background-color: skyblue;
@@ -66,6 +67,7 @@ ul, li{
 }
 
 .top_menu > ul ul.active{
+    display: block;
     visibility: visible;
     opacity: 1;
 }
