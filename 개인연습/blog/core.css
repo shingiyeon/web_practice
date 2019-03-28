@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'NanumGothic';
+    src: url(NanumFont_TTF_ALL/NanumGothic.ttf) format('truetype');
+}
+.whole_wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.whole_wrapper > .head{
+    display: block;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: slateblue;
+}
+
+.whole_wrapper > .body{
+    display: block;
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    background-color: white;
+}
+
+body, ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: NanumGothic;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.con{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}

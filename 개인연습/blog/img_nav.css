@@ -1,0 +1,25 @@
+ul#img_nav{
+    background-color: whitesmoke;
+    padding-right: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+ul#img_nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+ul#img_nav > li{
+    float: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+ul#img_nav img{
+    display: block;
+    width: 100%;
+}

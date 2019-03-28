@@ -1,0 +1,29 @@
+
+ul#top_nav{
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    bottom: 10px;
+    right:10%;
+    left: 10%;
+    color: whitesmoke;
+}
+
+
+ul#top_nav > li{
+    display: inline-block;
+}
+
+ul#top_nav > li > a{
+    padding: 5px 5px;
+}
+
+ul#top_nav > li > .divider{
+    color: white;
+    margin: 0px 5px;
+}
+
+ul#top_nav > li:hover{
+    color: darkblue;
+}

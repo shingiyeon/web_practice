@@ -1,0 +1,21 @@
+.whole_wrapper > .head > .title{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    font-size: 3rem;
+    color: gainsboro;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.whole_wrapper > .head > .subtitle{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+}
