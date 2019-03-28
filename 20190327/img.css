@@ -1,0 +1,51 @@
+
+/* 노말라이즈 */
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+}
+
+/* 라이브러리 */
+.con {
+    width:auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-box > img {
+    /* 이미지 주변에 쓸떼없이 생기는 여백이 사라진다. 즉 글자로서의 특징이 사라진다. */
+    display:block;
+    /* 이걸 해줘야 이미지 너비가 유연해집니다. */
+    width:100%;
+}
+
+.cell {
+    float:left;
+}
+
+/* 커스텀 */
+.con {
+    max-width:1000px;
+}
+
+.list1 .cell {
+    width:20%;
+}
+
+
+.img-list::after{
+    content : "";
+    clear: both;
+    display: block;
+}
+
+.img-list > .cell{
+    display: block;
+    width: 20%;
+    text-align: center;
+}

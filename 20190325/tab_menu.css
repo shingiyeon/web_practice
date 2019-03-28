@@ -1,0 +1,47 @@
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+.tab-box-1 {
+    border:10px solid black;
+    display:inline-block;
+}
+
+.tab-box-1 > .head > ul > li {
+    float:left;
+}
+
+.tab-box-1 > .head > ul > li > a {
+    display:block;
+    padding:10px;
+    background-color:black;
+    color:white;
+    font-weight:bold;
+}
+
+.tab-box-1 > .head > ul > li:hover > a, .tab-box-1 > .head > ul > li.active > a {
+    background-color:transparent;
+    color:inherit;
+}
+
+.tab-box-1 > .head > ul::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.tab-box-1 > .body > ul > li {
+    display:none;
+    padding:10px;
+}
+
+.tab-box-1 > .body > ul > li.active {
+    display:block;
+}
