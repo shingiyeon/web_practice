@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+}
+
+.ico{
+    width:100px;
+    height:100px;
+    position:relative;
+    cursor:pointer;
+}
+
+.ico.ico-close{
+    transition: transform 0s, margin-left 1s;
+}
+
+.ico.ico-close:hover{
+    transform:rotate(720deg);
+    transition:transform 1s, margin-left 1s;
+    margin-left:500px;
+}
+
+.ico.ico-close::before, .ico.ico-close::after{
+    position:absolute;
+    content:"";
+    top:50%;
+    left:50%;
+    width:10%;
+    height:70%;
+    color:white;
+    background-color:white;
+    transform:translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.ico.ico-close::before{
+    transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+}

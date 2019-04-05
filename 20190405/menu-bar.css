@@ -1,0 +1,80 @@
+body, ul, li{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color:inherit;
+    text-decoration:inherit;
+}
+
+.row::after{
+    display: block;
+    content: "";
+    clear:both;
+}
+
+.cell{
+    float:left;
+}
+
+
+
+.menu-bar > .row {
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.menu-bar > .row > .cell{
+    width: 25%;
+    text-align:center;
+    font-weight:bold;
+    font-size: 1.3rem;
+    position:relative;
+}
+
+.menu-bar > .row > .cell > a{
+    display: block;
+    padding: 10px;
+}
+
+.menu-bar > .row > .cell > a::after{
+    display:block;
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:5px;
+    width: 0%;
+    background-color:black;
+    transition: width 0.3s;
+}
+
+.menu-bar > .row > .cell:hover > a::after{
+    width: 100%;
+}
+
+@media (min-width:800px){
+    .menu-bar > .row{
+        width: 800px;
+    }
+}
+
+@media (min-width:400px) and (max-width:800px){
+    .menu-bar > .row{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){
+    .menu-bar > .row{
+        width: 100%;
+    }
+    .menu-bar > .row > .cell{
+        font-size: 1rem;
+    }
+}

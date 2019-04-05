@@ -1,0 +1,80 @@
+body, ul, li{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color:inherit;
+    text-decoration:inherit;
+}
+
+.header{
+    display: block;
+    width: 100%;
+}
+
+.header > .menu-bar > ul > li{
+    width: 20%;
+}
+
+.header > .menu-bar > .menu ul{
+    display: none;
+}
+
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.cell{
+    float:left;
+}
+
+.cell-right{
+    float: right;
+}
+
+.header > .menu-bar ul{
+    background-color: #dfdfdf;
+}
+
+.header > .menu-bar ul > li > a{
+    display: block;
+    padding: 10px;
+}
+
+.header > .menu-bar ul > li{
+    position:relative;
+    text-align:center;
+}
+
+.header > .menu-bar ul > li:hover > a{
+    background-color:black;
+    color:white;
+}
+
+.header > .menu-bar ul > li:hover > ul{
+    display: block;
+}
+
+.header > .menu-bar > ul ul{
+    position:absolute;
+    width: 100%;
+}
+
+.header > .menu-bar > ul ul ul{
+    left:100%;
+    top:0;
+}
+
+.header > .menu-bar > ul > li:last-child > ul ul{
+    left:auto;
+    right:100%;
+}
+
+.header > .sub-header > .icon-menu > .icon{
+    padding: 5px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,91 @@
+body, ul, li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .con{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .menu-1{
+    display: block;
+    text-align: center;
+    margin-top:5px;
+  }
+  
+  .menu-1 > .box{
+    display: inline-block;
+    background-color: white;
+    border-style: solid;
+    border-width: 3px;
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+  }
+  
+  .menu-1 > .box:hover{
+    cursor: pointer;
+  }
+  
+  .menu-1 > .box:hover.active{
+      background-color: black;
+  }
+  
+  .box.active{
+    background-color: black;
+  }
+  
+  .list-box-1{
+    margin: 30px 0px;
+  }
+  
+  .list-box-1 > ul.ulblock > li.liblock{
+    display: none;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .list-box-1 > ul.ulblock > li.active{
+    display: block;
+  }
+  
+  .list-box-1 > ul > li > ul.row::after{
+    display: block;
+    content: "";
+    clear: both;
+  }
+  
+  .list-box-1 > ul > li > ul.row{
+      padding: 0 10px;
+  }
+  
+  .list-box-1 > ul > li > ul.row > li.cell{
+      border-style: solid;
+      border-width: 1px;
+      border-color: gray;
+      display: block;
+      float: left;
+      box-sizing: border-box;
+      width: 25%;
+      padding: 0 5px;
+  }
+  
+  .list-box-1 > ul > li > ul.row > li.cell > img{
+    margin-top: -30px;
+    width: 100%;
+    display: block;
+  }
+  
+  .list-box-1 > ul > li > ul.row{
+    margin: 0 -5px;
+  }
+  
+  .list-box-1 > ul > li > ul.row > li.cell > .img-text{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  

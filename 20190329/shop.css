@@ -1,0 +1,54 @@
+
+html, body{
+    overflow-x: hidden;
+}
+
+body, ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.con{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list1 > .row::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.list1 > .row > .cell{
+    display: block;
+    float: left;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing:border-box;
+}
+
+.list1 .img-box > img{
+    display: block;
+    width: 100%;
+}
+
+
+.list1 .cell > .product-name{
+    text-align: center;
+}
+
+.list1 .row{
+    margin-top: 20px;
+}
+
+
+.con{
+    max-width: 1000px;
+}
