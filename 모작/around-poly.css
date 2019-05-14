@@ -1,0 +1,244 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.cell{
+    float: left;
+    box-sizing: border-box;
+}
+
+
+.con{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.img_box > img{
+    display: block;
+    width: 100%;
+}
+
+.why_box{
+    position: relative;
+    display: block;
+    background-image:url(https://www.stayfolio.com/system/pictures/images/000/029/319/original/8727d995bf606ab3af43eaf2cfa75d2f914ab3b8.jpg?1538462866);
+    left: 0;
+    height: 1000px;
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.text_box > hgroup{
+    color: white;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    white-space:nowrap;
+}
+
+.text_box > hgroup > h1{
+    margin: 40px 0px;
+    display: block;
+}
+
+.text_box > hgroup > h2{
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.text_box > hgroup > h2 > span{
+    display: inline-block;
+}
+
+.text_box > hgroup > h2::before, .text_box > hgroup > h2::after{
+    background-color: white;
+    content: "";
+    width: calc(50% - 150px);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top:49%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    
+}
+
+.text_box > hgroup > h2::after{
+    left: auto;
+    right: 0;
+}
+
+
+.why_box > .text_box > .inner_text_box {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 30%;
+}
+
+.why_box > .text_box > .inner_text_box > ul > .cell{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+}
+
+.why_box > .text_box > .inner_text_box > ul > li > div{
+    padding: 10px;
+}
+
+.right-menu-box{
+    top: 50%;
+    transform: translateY(-50%);
+    position: fixed;
+    right: 3%;
+    left: auto;
+    z-index: 2;
+}
+
+.right-menu-box > ul > li{
+    background-color: #dfdfdf;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    text-align: center;
+}
+.right-menu-box > ul > li i{
+    padding: 3px;
+    margin: 3px 0px;
+    font-size: 20px;
+    color: gray;
+}
+.right-menu-box > ul > li i.goto{
+    content: "";
+    display: inline-block;
+    background-color: gray;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.right-menu-box > ul > li > ul > li{
+    position: relative;
+}
+
+.right-menu-box > ul > li > ul > li span{
+    position: absolute;
+    top: 0%;
+    right: 200%;
+    white-space:nowrap;
+    width: 150px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: none;
+}
+
+.right-menu-box > ul > li > ul > li:hover span{
+    display: block;
+}
+
+.right-menu-box > ul > li > ul > li:hover i.active {
+    background-color: white;
+    border: 1px black solid;
+}
+.right-menu-box > ul > li > ul > li:hover i.goto {
+    background-color: black;
+}
+
+.right-menu-box > ul > li > ul > li:hover i:not(.goto){
+    color: black;
+}
+
+.image_slides {
+    position: relative;
+    height: 400px;
+}
+
+.image_slides > .slides > .slide{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image_slides > .slides > .slide.active{
+    opacity: 1;
+}
+
+.image_slides > .buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image_slides > .buttons > .button{
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color: #6f6f6f;
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.image_slides > .buttons > .button.active{
+    background-color: whitesmoke;
+}
+
+.image_slides > .side-buttons > *{
+    position: absolute;
+    font-size: 60px;
+    color: whitesmoke;
+    text-align:center;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.image_slides > .side-buttons > .right-button{
+    color: white;
+    right: 10px;
+    left: auto;
+}
+
+.image_slides > .side-buttons > *:hover{
+    transform: translateY(-55%);
+}

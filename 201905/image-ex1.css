@@ -1,0 +1,83 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.cell{
+    float: left;
+    box-sizing: border-box;
+}
+
+.img-list > .cell {
+    width: 50%;
+    padding: 50px;
+}
+
+.img-list > .cell > .img-box{
+    position: relative;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+.img-list > .cell > .img-box::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    z-index : 1;
+    transition: background-color 0.5s;
+}
+
+.img-list > .cell > .img-box > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    opacity : 0;
+    border-style: solid;
+    border-color: white;
+    z-index: 2;
+    transition: opacity 0.5s;
+}
+
+.img-list > .cell > .img-box:hover > span{
+    opacity : 1;
+}
+
+.img-list > .cell > .img-box:hover::before{
+    background-color : rgba(0,0,0,0.5);
+}
+
+.img-list > .cell > .img-box:hover > img{
+    transform : scale(1.1);
+}
+
+.img-list > .cell > .img-box > img{
+    transition: transform 0.5s;
+}
+/* 라이브러리 */
+.img-box > img {
+    width:100%;
+    display:block;
+}
