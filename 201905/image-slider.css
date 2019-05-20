@@ -1,0 +1,83 @@
+body, ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body, html{
+    height: 100%;
+}
+
+.sliders > .menu-bars > .bar{
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width:calc(50% - 50px);
+    cursor: pointer;
+}
+
+.sliders > .menu-bars > .bar > span{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: bold;
+    left:inherit;
+    right: inherit;
+    top:50%;
+    margin: 10px 0px;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+}
+
+.sliders > .menu-bars > .bar:active > span{
+    transform: translateY(-40%);
+}
+
+.sliders > .menu-bars > .bar:last-child{
+    left:auto;
+    right:0;
+}
+
+.sliders{
+    height: 100%;
+    width: 100%;
+}
+
+.sliders > .slides > .slide{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slides > .slides > .slide:last-child{
+    background-size: contain;
+}
+
+
+.sliders > .slides > .active{
+    opacity: 1;
+}
+
+.sliders > .progress-bar{
+    position:absolute;
+    width: 50%;
+    height: 15px;
+    left: 50%;
+    top: 30px;
+    background-color: whitesmoke;
+    transform: translateX(-50%);
+}
+
+.sliders > .progress-bar > .my-bar{
+    opacity: 1;
+    width: 1%;
+    height: 15px;
+    background-color: green;
+}

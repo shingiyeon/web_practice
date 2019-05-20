@@ -1,50 +1,164 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./shop.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 
-    <body>
-        <div class="header con-min-width">
-            <div class="top-banner-box row">
-                <ul class="top-banner-box-menu-list cell-right row">
-                        <li class="top-banner-box-menu cell"><a href="#">로그인</a></li>
-                        <li class="top-banner-box-menu cell"><a href="#">회원가입</a></li>
-                        <li class="top-banner-box-menu cell"><a href="#">MY SHOP</a></li>
-                        <li class="top-banner-box-menu cell"><a href="#">장바구니</a></li>
-                        <li class="top-banner-box-menu cell"><a href="#">주문조회</a></li>
-                        <li class="top-banner-box-menu cell"><a href="#">고객센터</a></li>
+
+
+<div class="header con-min-width">
+    <div class="top-banner-box row">
+        <ul class="top-banner-box-menu-list cell-right row">
+                <li class="top-banner-box-menu cell"><a href="#">로그인</a></li>
+                <li class="top-banner-box-menu cell"><a href="#">회원가입</a></li>
+                <li class="top-banner-box-menu cell My-shop"><a href="#">MY SHOP</a></li>
+                <li class="top-banner-box-menu cell"><a href="#">장바구니</a></li>
+                <li class="top-banner-box-menu cell"><a href="#">주문조회</a></li>
+                <li class="top-banner-box-menu cell"><a href="#">고객센터</a></li>
+        </ul>
+    </div>
+    
+
+    
+    <div class="top-area-board con-min-width con">
+        <form class="search-box">
+            <input type="text" placeholder="검색어를 입력해주세요.">
+            <i class="fas fa-search"></i>
+        </form>
+        <div class="top-area">
+            <div class="title">
+                <a href="#">
+                    <h1>VIVIENNE</h1>
+                    <h2>PARIS</h2>
+                    <h3><p>LUXURIOUS PERFUME</br>IN REED DIFFUSER</p></h3>
+                </a>
+            </div>
+            <div class="top-board">
+               <ul class="top-board-menu-list row">
+                   <li class="top-board-menu cell"><a href="#">NOTICE</a></li>
+                   <li class="top-board-menu cell"><a href="#">EVENT</a></li>
+                   <li class="top-board-menu cell"><a href="#">REVIEW</a></li>
+                   <li class="top-board-menu cell"><a href="#">BLOGGER</a></li>
+                   <li class="top-board-menu cell"><a href="#">PR</a></li>
+                   <li class="top-board-menu cell"><a href="#">FAQ</a></li>
+                   <li class="top-board-menu cell"><a href="#">Q&A</a></li>
                 </ul>
             </div>
-            <div class="top-area">
-                <div class="title">
-                    <a href="#">
-                        <h1>VIVIENNE</h1>
-                        <h2>PARIS</h2>
-                        <h3><p>LUXURIOUS PERFUME</br>IN REED DIFFUSER</p></h3>
-                    </a>
-                </div>
-                <div class="top-board">
-                <ul class="top-board-menu-list row">
-                    <li class="top-board-menu cell"><a href="#">NOTICE</a></li>
-                    <li class="top-board-menu cell"><a href="#">EVENT</a></li>
-                    <li class="top-board-menu cell"><a href="#">REVIEW</a></li>
-                    <li class="top-board-menu cell"><a href="#">BLOGGER</a></li>
-                    <li class="top-board-menu cell"><a href="#">PR</a></li>
-                    <li class="top-board-menu cell"><a href="#">FAQ</a></li>
-                    <li class="top-board-menu cell"><a href="#">Q&A</a></li>
-                    </ul>
-                </div>
-
-            </div>
         </div>
-    </body>
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <script src="./shop.js"></script>
-</html>
+    </div>
+</div>
+
+<div class="body con con-min-width">
+    <nav class="menu-bar">
+        <ul class="menu-list row">
+            <li class="menu cell">
+                <a href="#">GIFT SET / PACKAGE</a>
+                <ul class="menu-list2">
+                    <li class="menu2 "><a href="#">어버이날/스승의날</a></li>
+                    <li class="menu2 "><a href="#">블랙스톤</a></li>
+                    <li class="menu2 "><a href="#">골드라벨</a></li>
+                    <li class="menu2 "><a href="#">블랙라벨</a></li>
+                    <li class="menu2 "><a href="#">퀸즈라벨</a></li>
+                    <li class="menu2 "><a href="#">프리미엄아로마</a></li>
+                    <li class="menu2 "><a href="#">포장/카드</a></li>
+                </ul>
+            </li>
+            
+            <li class="menu cell">
+                <a href="#">BLACK STONE</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">대용량디퓨저</a></li>
+                    <li class="menu2"><a href="#">디퓨저리필</a></li>
+                    <li class="menu2"><a href="#">액세서리</a></li>
+                    <li class="menu2"><a href="#">선물세트/포장</a></li>
+                </ul>
+            </li>
+            <li class="menu cell">
+                <a href="#">GOLD LABEL</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">대용량디퓨저</a></li>
+                    <li class="menu2"><a href="#">디퓨저리필</a></li>
+                    <li class="menu2"><a href="#">액세서리</a></li>
+                    <li class="menu2"><a href="#">선물세트/포장</a></li>
+                </ul>                
+            </li>
+            <li class="menu cell">
+                <a href="#">BLACK LABEL</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2 "><a href="#">디퓨저</a></li>
+                    <li class="menu2 "><a href="#">미니디퓨저</a></li>
+                    <li class="menu2 "><a href="#">차량용디퓨저</a></li>
+                    <li class="menu2 "><a href="#">디퓨저리필</a></li>
+                    <li class="menu2 "><a href="#">액세서리</a></li>
+                    <li class="menu2 "><a href="#">선물세트/포장</a></li>
+                </ul>
+             </li>
+            <li class="menu cell">
+                <a href="#">QUEEN's LABEL</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">디퓨저</a></li>
+                    <li class="menu2"><a href="#">미니디퓨저</a></li>
+                    <li class="menu2"><a href="#">차량용디퓨저</a></li>
+                    <li class="menu2"><a href="#">디퓨저리필</a></li>
+                    <li class="menu2"><a href="#">액세서리</a></li>
+                    <li class="menu2"><a href="#">선물세트/포장</a></li>
+                </ul>
+            </li>
+            <li class="menu cell">
+                <a href="#">PREMIUM AROMA</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">디퓨저</a></li>
+                    <li class="menu2"><a href="#">미니디퓨저</a></li>
+                    <li class="menu2"><a href="#">차량용디퓨저</a></li>
+                    <li class="menu2"><a href="#">디퓨저리필</a></li>
+                    <li class="menu2"><a href="#">액세서리</a></li>
+                    <li class="menu2"><a href="#">선물세트/포장</a></li>
+                </ul>
+            </li>
+            <li class="menu cell">
+                <a href="#">CAR DIFFUSER</a>
+                <ul class="menu-list2">
+                    <li class="menu2"><a href="#">블랙라벨</a></li>
+                    <li class="menu2"><a href="#">퀸즈라벨</a></li>
+                    <li class="menu2"><a href="#">프리미엄아로마</a></li>
+                    <li class="menu2"><a href="#">디퓨저리필</a></li>
+                    <li class="menu2"><a href="#">액세서리</a></li>
+                    <li class="menu2"><a href="#">선물세트/포장</a></li>
+                </ul>
+            </li>
+            <li class="menu cell">
+                <a href="#">REFILL</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">블랙스톤</a></li>
+                    <li class="menu2"><a href="#">골드라벨</a></li>
+                    <li class="menu2"><a href="#">블랙라벨</a></li>
+                    <li class="menu2"><a href="#">퀸즈라벨</a></li>
+                    <li class="menu2"><a href="#">프리미엄아로마</a></li>
+                    <li class="menu2"><a href="#">스틱/용품</a></li>
+                </ul>
+              </li>
+            <li class="menu cell">
+                <a href="#">ACCESSORIES</a>
+                <ul class="menu-list2 row">
+                    <li class="menu2"><a href="#">탁상용받침대</a></li>
+                    <li class="menu2"><a href="#">벽걸이거치대</a></li>
+                    <li class="menu2"><a href="#">디퓨저조화</a></li>
+                    <li class="menu2"><a href="#">스틱/기타</a></li>
+                </ul>                
+            </li>
+        </ul>
+    </nav>
+    
+    
+    <div class="top-banner row">
+        <div class="cell">
+            <div class="cell2"><a href="#"><div class="img-box"><img src="http://vivienne.kr/web/upload/event/main_left_banner_review.jpg" alt=""></div></a></div>
+            <div class="cell2">asdfasdf</div>
+        </div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+</div>
+
+

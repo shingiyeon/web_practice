@@ -27,6 +27,7 @@ a{
 
 .cell{
     float:left;
+    box-sizing:border-box;
 }
 
 .cell-right{
@@ -37,6 +38,7 @@ a{
 
 .header{
     position:relative;
+    height: 180px;
 }
 
 /*top-banner-box*/
@@ -56,7 +58,58 @@ a{
     margin: 0 5px;
 }
 
+.top-banner-box > .top-banner-box-menu-list > .My-shop > a::after{
+    content: "♥";
+    color: red;
+}
+
+
+
+/*top-area-board*/
+.top-area-board{
+    position: relative;
+    display: block;
+    height: 150px;
+}
+
+
+/*search-box*/
+.search-box{
+    position: absolute;
+    display: inline-block;
+    background-color: red;
+    right: 10%;
+    top:50%;
+    
+}
+
+.search-box > input{
+    padding: 10px 20px;
+    border:1px solid #dfdfdf;
+    outline:0;
+    padding:10px;
+    padding-right:35px;
+}
+
+.search-box > input:focus{
+    border-color: black;
+}
+
+.search-box > i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
 /*top-area*/
+
+
+
 /*title*/
 
 .top-area > .title{
@@ -131,11 +184,118 @@ a{
     display:none;
 }
 
+/*Body*/
+.body {
+    position: relative;
+    border-top: solid 3px black;
+}
+
+/*menu-bar*/
+.body > .menu-bar{
+    text-align:center;
+}
+
+/*menu-list*/
+.body > .menu-bar > .menu-list {
+    display: inline-block;
+    text-align:center;
+}
+
+.body > .menu-bar > .menu-list > .menu{
+    position: relative;
+}
+
+.body > .menu-bar > .menu-list > .menu > a{
+    display: block;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.body > .menu-bar > .menu-list > .menu:hover{
+    background-color:black;
+    color: white;
+}
+
+/*menu-list 2*/
+.body > .menu-bar .menu:hover > .menu-list2{
+    display: block;
+    background-color: white;
+}
+
+.body > .menu-bar .menu-list2{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid black 2px;
+}
+
+.body > .menu-bar .menu-list2 > .menu2{
+    border-color: rgba(0,0,0,0.6);
+    border-width: 0.05rem;
+    padding: 5px 15px;
+    border-style: solid;
+    white-space:nowrap;
+    color: black;
+}
+
+.body > .menu-bar .menu-list2 > .menu2:hover{
+    color: white;
+    background-color: black;
+}
+
+.body > .top-banner {
+    display: block;
+    height: 500px;
+}
+
+
+.body > .top-banner > .cell:not(:first-child) {
+    margin-left:12px;
+}
+
+.body > .top-banner  .cell{
+    height: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.body > .top-banner > .cell:first-child {
+    width:221px;
+    border: none;
+}
+
+.body > .top-banner > .cell:first-child > .cell2:first-child{
+    border: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.body > .top-banner > .cell:first-child > .cell2:first-child img{
+    display: block;
+    width: 100%;
+}
+
+.body > .top-banner > .cell:first-child > .cell2:nth-child(2) {
+    margin-top: 10%;
+}
+
+.body > .top-banner > .cell:nth-child(2) {
+    width:595px;
+}
+
+.body > .top-banner > .cell:nth-child(3) {
+    width:310px;
+}
+
+
+
 /*Custom*/
 .con{
-    width: 1180px;
+    width: 1150px;
 }
 
 .con-min-width{
-    min-width:1180px;
+    min-width:1150px;
 }
+
+
